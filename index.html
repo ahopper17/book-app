@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {margin:0;}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-</style>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "index.css">
+  <title>Yuval BH</title>
 </head>
+
 <body>
 
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+  <div id ="container">
+   
+    <div class="screen top">
+      <h1 class = "main">Hello, my name's Alyssa E Hopper</h1>
+      <h2 class = 'subheading'>pronounced uh-lees-uh</h3>
+    </div>
 
-<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
-  <h1>Fixed Top Navigation Bar</h1>
-  <h2>Scroll this page to see the effect</h2>
-  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+    <!-- <img class = 'face' src="face.png" alt="face"> -->
 
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-</div>
+    <div class="intro">
+      <p class = 'intro top'>Former actor, turned teacher, turned cross country cyclist, turned Tiktok content creator, turned hopeful software engineer. My life has taken many turns and I was hoping you might help me figure out where it's going next.</p>
+      <p class="intro bottom">I have immersed myself into everything I've been able to over the last ten years. My ability to do this stems from two things: patience & obsession. Take a look around to see for yourself. </p>
+    </div>
+
+    <div class="projects">
+      <h2 class = 'head'>Personal Projects</h2>
+      <h3 class = 'sub'>just a few of my more recent obsessions</h3>
+      
+      <div class="card-group">
+        
+        <div class="card">
+          <img class = card-img-top src="wordle.png" alt="wordle">
+          <div class="card-body">
+            <div class="card-title">WordleBot</div>
+            <div class="card-text">The best WordleBot on the internet. Capable of Wordles up to 11 letters and 8 different variants.</div>
+            <a target="_blank" href="https://ybenhayun.github.io/wordlebot/" class="btn btn-primary">try it out</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img class = card-img-top src="weaverbot.png" alt="weaverbot">
+          <div class="card-body">
+            <div class="card-title">WeaverBot</div>
+            <div class="card-text">Give any two 4 letter words, and I'll draw you a graph of all word ladders between them.</div>
+            <a target="_blank" href="https://ybenhayun.github.io/weaverbot/" class="btn btn-primary">try it out</a>
+          </div>
+        </div>         
+
+        <div class="card">
+          <img class = card-img-top src="snake.png" alt="wordle">
+          <div class="card-body">
+            <div class="card-title">Snake16 <div class = 'desktop'>(desktop only)</div></div>
+            <div class="card-text">Snake, but with 16 different levels. All add something a little different. And yes, there's a bot for it too that plays almost perfectly.</div>
+            <a target="_blank" href="https://ybenhayun.github.io/snake16/" class="btn btn-primary">try it out</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class = card-img-top src="keyboard.png" alt="keyboard">
+          <div class="card-body">
+            <div class="card-title">Clear the Board </div>
+            <div class="card-text">Another word puzzle. So far, I've found 13 valid solutions.</div>
+            <a target="_blank" href="https://ybenhayun.github.io/cleartheboard/" class="btn btn-primary">try it out</a>
+          </div>
+        </div>     
+        
+        <div class="card">
+          <img class = card-img-top src="birthday.png" alt="birthday">
+          <div class="card-body">
+            <div class="card-title">The Birthday Paradox</div>
+            <div class="card-text">This will calculate the odds that two people will share a birthday in a group of any size, taking into account both leap years & birthday distributions.</div>
+            <a target="_blank" href="https://ybenhayun.github.io/birthdayparadox/" class="btn btn-primary">try it out</a>
+          </div>
+        </div>         
+        <div class="card">
+          <img class = card-img-top src="reversewordle.png" alt="reversewordlebot">
+          <div class="card-body">
+            <div class="card-title">Reverse WordleBot</div>
+            <div class="card-text">Inspired by the Wordle inspired Tiktok filter. This bot will attempt to make a valid word 1 letter at a time, without knowing any of the subsequent letters.</div>
+            <a target="_blank" href="https://ybenhayun.github.io/reversewordle/" class="btn btn-primary">try it out</a>
+          </div>
+        </div>         
+        <div class="card">
+          <img class = card-img-top src="powerball.png" alt="powerball">
+          <div class="card-body">
+            <div class="card-title">PowerBall Bot</div>
+            <div class="card-text">Feeling lucky? Use this simulator to keep playing the lottery until the win. Warning: it may not make you feel so lucky.</div>
+            <a target="_blank" href="https://ybenhayun.github.io/powerball/" class="btn btn-primary">try it out</a>
+          </div>
+        </div>         
+        
+
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="socials">
+        <a class="logo github" a target="_blank" href="https://github.com/ybenhayun"></github><img src="github.png" alt="github"></a>
+        <a class="logo twitter" a target="_blank" href="https://twitter.com/yuvaldoubtsit"><img src="twitter.png" alt="twitter"></a>
+        <a class="logo tiktok" a target="_blank" href="https://www.tiktok.com/@yuvaltheterrible"><img src="tiktok.png" alt="tiktok"></a>
+        <!-- <a class="logo linkedin" a target="_blank" href="https://www.linkedin.com/in/yuval-ben-hayun-979975aa"><img src="linkedin.png" alt="linkedin"></a> -->
+        <a class="logo coffee" a target="_blank" href="https://ko-fi.com/ybenhayun"><img src="coffee.png" alt="coffee"></a>
+      </div>
+    </div>
+
+  
+  </div> 
+
 
 </body>
 </html>
